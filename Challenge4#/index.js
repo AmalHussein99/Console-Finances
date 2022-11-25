@@ -177,8 +177,6 @@ var a = [
 //Declaring variables
 var CV = 0; //current value
 var total = 0; // Total amount
-var AV = 867884; // the above value starting with the first one
-var APL = 0; // Thew above profit/loss
 var totalPL = 0; // total profit/loss
 var GIP = ["",0] ; //Greatest increase in profit
 var GDP = ["",0]; // Greatest decrease in profit
@@ -279,9 +277,9 @@ let arr = [
     138230,
     671099
     ];
-    let differences = diffs(arr);
+    let differences = diffs(arr); // declare varaible for the new array
 
-function diffs(arr){
+function diffs(arr){  
     let diffs = arr.map((element, index, arr) => (arr[index+1] || 0)  - element);
     diffs.pop();
     return diffs;
